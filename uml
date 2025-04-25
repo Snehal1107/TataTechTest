@@ -1,0 +1,32 @@
++----------------+
+|    Player      |
++----------------+
+| - name: string |
+| - frames: vector<Frame> |
++----------------+
+| + addRoll(pins: int): void |
+| + getTotalScore(): int |
++----------------+
+ 
++----------------+
+|    Frame       |
++----------------+
+| - roll: vector<int> |
+| - bonus: int |
++----------------+
+| + addRoll(pins: int): void |
+| + strike(): bool |
+| + spare(): bool |
+| + complete(): bool |
+| + getScore(): int |
++----------------+
+ 
++----------------+
+|  BowlingGame   |
++----------------+
+| - player: Player |
++----------------+
+| + roll(pins: int): void |
+| + getScore(): int |
+| + isGameOver(): bool |
++----------------+
